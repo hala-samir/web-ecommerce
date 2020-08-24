@@ -3,14 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.UserRegistrationDDTusingJSONFileTest">
+      <class name="tests.UserRegistrationUsingFakerLibraryTest">
         <methods>
-          <include name="userCanRegisterSuccessfully"/>
           <include name="stopDriver"/>
+          <include name="Logout"/>
           <include name="screenshotOnFailure"/>
+          <include name="userCanLogin"/>
+          <include name="userCanRegisterSuccessfully"/>
           <include name="StartDriver"/>
         </methods>
-      </class> <!-- tests.UserRegistrationDDTusingJSONFileTest -->
+      </class> <!-- tests.UserRegistrationUsingFakerLibraryTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
