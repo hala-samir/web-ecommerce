@@ -87,6 +87,12 @@
     <artifactId>gherkin</artifactId>
     <version>15.0.2</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-plugin -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-plugin</artifactId>
+    <version>6.5.1</version>
+</dependency>
 
 		
 
