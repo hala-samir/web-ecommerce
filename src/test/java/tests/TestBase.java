@@ -20,9 +20,10 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import helpers.Helper;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
 
 
-public class TestBase
+public class TestBase extends AbstractTestNGCucumberTests
 {
 	public static WebDriver driver;
 	public static String downloadPath=System.getProperty("user.dir")+"/downloads";
