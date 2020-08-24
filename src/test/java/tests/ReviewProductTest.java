@@ -24,7 +24,7 @@ public class ReviewProductTest extends TestBase {
 	String productPartialName = "Apple Mac";
 	String fname="Tester";
 	String lname="Test";
-	String email="tester@test107ml1.co0m";
+	String email="tester@ffeg6.co0m";
 	String friend_mail="friend1@gmail.com";
 	String oldPass="123456789";
 	String msg= "check this please!!";
@@ -32,7 +32,7 @@ public class ReviewProductTest extends TestBase {
 	String review_txt= "It can be better";
 	
 	
-	@Test(priority=1)
+	@Test(priority=1, alwaysRun = true)
 	public void userCanRegisterSuccessfully() 
 	{	homeObj=new HomePage(driver);
 		registPageObj=new UserRegistration(driver);
@@ -42,7 +42,8 @@ public class ReviewProductTest extends TestBase {
 		Assert.assertTrue(registPageObj.successMsg.getText().contains("Your registration completed"));
 	}
 
-	@Test(dependsOnMethods="userCanRegisterSuccessfully",priority=2)
+	//@Test(dependsOnMethods="userCanRegisterSuccessfully")
+	@Test(priority=2, alwaysRun = true) 
 	public void userSearchForProductsUsingAutoSuggestion() 
 	{
 		productPageObj = new ProductPage(driver);
@@ -51,7 +52,8 @@ public class ReviewProductTest extends TestBase {
 		Assert.assertEquals(productPageObj.productName.getText(), productName);
 	}
 	
-	@Test(dependsOnMethods="userSearchForProductsUsingAutoSuggestion",priority = 3)
+	//@Test(dependsOnMethods="userSearchForProductsUsingAutoSuggestion")
+	@Test(priority=3, alwaysRun = true) 
 	public void userCanSubmitProductReview() 
 	{
 		productReviewPageObj= new ProductReviewPage(driver);
@@ -59,7 +61,8 @@ public class ReviewProductTest extends TestBase {
 		productReviewPageObj.addReview(review_title, review_txt);	
 		Assert.assertTrue(productReviewPageObj.reviewSuccessMsg.getText().contains("Product review is successfully added"));		
 	}
-	@Test(dependsOnMethods = "userCanRegisterSuccessfully",priority = 4 )
+	//@Test(dependsOnMethods = "userCanSubmitProductReview")
+	@Test(priority=4, alwaysRun = true) 
 	public void Logout() 
 	{
 		registPageObj.Logout();

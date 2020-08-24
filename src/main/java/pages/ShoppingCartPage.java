@@ -13,8 +13,10 @@ public class ShoppingCartPage extends PageBase {
 	@FindBy (name = "removefromcart") WebElement uncheckProductFromCart;
 	public @FindBy (className = "product-subtotal") WebElement productTotal;
 	@FindBy (className = "qty-input") WebElement quantity_txt;
-	public @FindBy (className = "product-name")WebElement prodname;
-	public @FindBy (className = "no-data")WebElement removeFromCartConfirmationMsg;
+	public @FindBy (className = "product-name") WebElement prodname;
+	public @FindBy (className = "no-data") WebElement removeFromCartConfirmationMsg;
+	@FindBy (id="termsofservice") WebElement termsofservice;
+	@FindBy (name ="checkout") WebElement checkoutBtn;
 
 	public  void removeProductFromShoppingCart() throws InterruptedException
 	{
@@ -29,5 +31,13 @@ public class ShoppingCartPage extends PageBase {
 		setTxt(quantity_txt, quantity);	
 		clickBtn(updateCartBtn);
 	}
-
+	public void checkTermsofServicesCheckbox()
+	{
+		clickBtn(termsofservice);
+	}
+	
+	public void clickCheckoutBtn() 
+	{
+		clickBtn(checkoutBtn);
+	}
 }

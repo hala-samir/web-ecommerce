@@ -2,72 +2,72 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18755" started-at="2020-08-06T21:17:04 EET" finished-at="2020-08-06T21:17:22 EET">
+  <suite name="Default suite" duration-ms="12725" started-at="2020-08-23T09:35:12Z" finished-at="2020-08-23T09:35:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18755" started-at="2020-08-06T21:17:04 EET" finished-at="2020-08-06T21:17:22 EET">
-      <class name="tests.ShoppingCartTest">
-        <test-method status="PASS" signature="StartDriver(java.lang.String)[pri:0, instance:tests.ShoppingCartTest@34c4973]" name="StartDriver" is-config="true" duration-ms="10073" started-at="2020-08-06T21:16:53 EET" finished-at="2020-08-06T21:17:04 EET">
+    <test name="Default test" duration-ms="12725" started-at="2020-08-23T09:35:12Z" finished-at="2020-08-23T09:35:25Z">
+      <class name="tests.UserRegistrationUsingFakerLibraryTest">
+        <test-method status="PASS" signature="StartDriver(java.lang.String)[pri:0, instance:tests.UserRegistrationUsingFakerLibraryTest@328902d5]" name="StartDriver" is-config="true" duration-ms="19260" started-at="2020-08-23T09:34:53Z" finished-at="2020-08-23T09:35:12Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartDriver -->
-        <test-method status="PASS" signature="userCanAddtoShoppingCart()[pri:1, instance:tests.ShoppingCartTest@34c4973]" name="userCanAddtoShoppingCart" duration-ms="13747" started-at="2020-08-06T21:17:04 EET" finished-at="2020-08-06T21:17:17 EET">
+        <test-method status="PASS" signature="userCanRegisterSuccessfully()[pri:1, instance:tests.UserRegistrationUsingFakerLibraryTest@328902d5]" name="userCanRegisterSuccessfully" duration-ms="5259" started-at="2020-08-23T09:35:13Z" finished-at="2020-08-23T09:35:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userCanAddtoShoppingCart -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ShoppingCartTest@34c4973]" name="screenshotOnFailure" is-config="true" duration-ms="4" started-at="2020-08-06T21:17:17 EET" finished-at="2020-08-06T21:17:17 EET">
+        </test-method> <!-- userCanRegisterSuccessfully -->
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.UserRegistrationUsingFakerLibraryTest@328902d5]" name="screenshotOnFailure" is-config="true" duration-ms="5" started-at="2020-08-23T09:35:18Z" finished-at="2020-08-23T09:35:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=userCanAddtoShoppingCart status=SUCCESS method=ShoppingCartTest.userCanAddtoShoppingCart()[pri:1, instance:tests.ShoppingCartTest@34c4973] output={null}]]]>
+                <![CDATA[[TestResult name=userCanRegisterSuccessfully status=SUCCESS method=UserRegistrationUsingFakerLibraryTest.userCanRegisterSuccessfully()[pri:1, instance:tests.UserRegistrationUsingFakerLibraryTest@328902d5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method status="PASS" signature="userCanChnageQuantityOfShoppingCart()[pri:2, instance:tests.ShoppingCartTest@34c4973]" name="userCanChnageQuantityOfShoppingCart" duration-ms="1207" started-at="2020-08-06T21:17:17 EET" depends-on-methods="tests.ShoppingCartTest.userCanAddtoShoppingCart" finished-at="2020-08-06T21:17:19 EET">
+        <test-method status="PASS" signature="Logout()[pri:2, instance:tests.UserRegistrationUsingFakerLibraryTest@328902d5]" name="Logout" duration-ms="2929" started-at="2020-08-23T09:35:18Z" finished-at="2020-08-23T09:35:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userCanChnageQuantityOfShoppingCart -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ShoppingCartTest@34c4973]" name="screenshotOnFailure" is-config="true" duration-ms="2" started-at="2020-08-06T21:17:19 EET" finished-at="2020-08-06T21:17:19 EET">
+        </test-method> <!-- Logout -->
+        <test-method status="PASS" signature="userCanLogin()[pri:3, instance:tests.UserRegistrationUsingFakerLibraryTest@328902d5]" name="userCanLogin" duration-ms="4470" started-at="2020-08-23T09:35:21Z" finished-at="2020-08-23T09:35:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCanLogin -->
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.UserRegistrationUsingFakerLibraryTest@328902d5]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2020-08-23T09:35:21Z" finished-at="2020-08-23T09:35:21Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=userCanChnageQuantityOfShoppingCart status=SUCCESS method=ShoppingCartTest.userCanChnageQuantityOfShoppingCart()[pri:2, instance:tests.ShoppingCartTest@34c4973] output={null}]]]>
+                <![CDATA[[TestResult name=Logout status=SUCCESS method=UserRegistrationUsingFakerLibraryTest.Logout()[pri:2, instance:tests.UserRegistrationUsingFakerLibraryTest@328902d5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method status="PASS" signature="userCanRemoveFromShoppingCart()[pri:3, instance:tests.ShoppingCartTest@34c4973]" name="userCanRemoveFromShoppingCart" duration-ms="3736" started-at="2020-08-06T21:17:19 EET" depends-on-methods="tests.ShoppingCartTest.userCanChnageQuantityOfShoppingCart" finished-at="2020-08-06T21:17:22 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userCanRemoveFromShoppingCart -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ShoppingCartTest@34c4973]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2020-08-06T21:17:22 EET" finished-at="2020-08-06T21:17:22 EET">
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.UserRegistrationUsingFakerLibraryTest@328902d5]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2020-08-23T09:35:25Z" finished-at="2020-08-23T09:35:25Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=userCanRemoveFromShoppingCart status=SUCCESS method=ShoppingCartTest.userCanRemoveFromShoppingCart()[pri:3, instance:tests.ShoppingCartTest@34c4973] output={null}]]]>
+                <![CDATA[[TestResult name=userCanLogin status=SUCCESS method=UserRegistrationUsingFakerLibraryTest.userCanLogin()[pri:3, instance:tests.UserRegistrationUsingFakerLibraryTest@328902d5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.ShoppingCartTest@34c4973]" name="stopDriver" is-config="true" duration-ms="857" started-at="2020-08-06T21:17:22 EET" finished-at="2020-08-06T21:17:23 EET">
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.UserRegistrationUsingFakerLibraryTest@328902d5]" name="stopDriver" is-config="true" duration-ms="1911" started-at="2020-08-23T09:35:25Z" finished-at="2020-08-23T09:35:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
-      </class> <!-- tests.ShoppingCartTest -->
+      </class> <!-- tests.UserRegistrationUsingFakerLibraryTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -14,7 +14,7 @@ public class ChangeCurrencyTest extends TestBase {
 	String productName= "Apple MacBook Pro 13-inch";
     String productPartialName= "Apple Mac";
    
-	@Test(priority=1) 
+	@Test(priority=1, alwaysRun = true) 
 	public void userCanChangeCurrency()
 	{
 		homeObj=new HomePage(driver);
@@ -22,7 +22,8 @@ public class ChangeCurrencyTest extends TestBase {
 		homeObj.changeCurrency();
 	}
 	
-	@Test(priority=2) 
+	@Test(priority=2, alwaysRun = true)
+//	@Test(dependsOnMethods = "userCanChangeCurrency")
 	public void userSearchForProductsUsingAutoSuggestion() 
 	{
 		homeObj = new HomePage(driver);
@@ -32,7 +33,5 @@ public class ChangeCurrencyTest extends TestBase {
 		Assert.assertEquals(productPageObj.productName.getText(), productName);
 		Assert.assertTrue(productPageObj.productPrice.getText().contains("€"));
 	}
-	
-	
 
 }

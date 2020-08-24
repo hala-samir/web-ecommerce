@@ -12,13 +12,14 @@ public class ContactUsTest extends TestBase {
 	String fname = "tester";
 	String mail = "tester@test.com";
 	String msg = "I have a message";
-	@Test
+	@Test(priority=1) 
 	public void contactUsTest() 
 	{
 		homeObj= new HomePage(driver);
-		homeObj.openContactUsPage();
 		contactUspageObj= new ContactUsPage(driver);
+		
+		homeObj.openContactUsPage();
 		contactUspageObj.contactUs(fname, mail, msg);
-		Assert.assertEquals(contactUspageObj.successMsg.getText(), "Your enquiry has been successfully sent to the store owner.");
+		Assert.assertTrue(contactUspageObj.successMsg.getText().contains("Your enquiry has been successfully sent to the store owner.") );
 	}
 }

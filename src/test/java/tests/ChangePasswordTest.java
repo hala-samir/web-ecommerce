@@ -17,7 +17,7 @@ public class ChangePasswordTest extends TestBase{
 	MyAccount myAccObj;
 	String fname="Tester";
 	String lname="Test";
-	String email="tester@vx10c.com";
+	String email="tester@ssdc6.com";
 	String oldPass="123456789";
 	String newPass="12345678";
 
@@ -31,7 +31,8 @@ public class ChangePasswordTest extends TestBase{
 		Assert.assertTrue(registPageObj.successMsg.getText().contains("Your registration completed"));
 	}
 
-	@Test(dependsOnMethods="userCanRegisterSuccessfully")
+//	@Test(dependsOnMethods="userCanRegisterSuccessfully")
+	@Test(priority=2, alwaysRun = true)
 	public void RegisteredUserChangesPassword() 
 	{	
 		myAccObj=new MyAccount(driver);
@@ -41,14 +42,16 @@ public class ChangePasswordTest extends TestBase{
 		Assert.assertTrue(myAccObj.SuccessMsg.getText().contains("Password was changed"));
 	}
 	
-	@Test(dependsOnMethods="RegisteredUserChangesPassword")
+	//@Test(dependsOnMethods="RegisteredUserChangesPassword")
+	@Test(priority=3, alwaysRun = true)
 	public void Logout() 
 	{
 		registPageObj.Logout();
 		Assert.assertTrue(homeObj.loginLink.isDisplayed());
 	}
 	
-	@Test(dependsOnMethods="Logout")
+	//@Test(dependsOnMethods="Logout")
+	@Test(priority=4)
 	public void loginWithNewPass()
 	{ 
 		homeObj=new HomePage(driver);

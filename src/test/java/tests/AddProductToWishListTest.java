@@ -20,12 +20,12 @@ public class AddProductToWishListTest extends TestBase{
 	String productPartialName = "Apple Mac";
 	String fname="Tester";
 	String lname="Test";
-	String email="tester@test1082.co0m";
+	String email="tester@mmo3.co0m";
 	String friend_mail="friend1@gmail.com";
 	String oldPass="123456789";
 	
 	
-	@Test(priority=1)
+	@Test(priority=1, alwaysRun = true)
 	public void userCanRegisterSuccessfully() 
 	{	homeObj=new HomePage(driver);
 		registPageObj=new UserRegistration(driver);
@@ -35,7 +35,8 @@ public class AddProductToWishListTest extends TestBase{
 		Assert.assertTrue(registPageObj.successMsg.getText().contains("Your registration completed"));
 	}
 
-	@Test(dependsOnMethods="userCanRegisterSuccessfully",priority=2)
+////	@Test(dependsOnMethods="userCanRegisterSuccessfully")
+	@Test(priority=2, alwaysRun = true)
 	public void userSearchForProductsUsingAutoSuggestion() 
 	{
 		proPageObj = new ProductPage(driver);
@@ -43,7 +44,8 @@ public class AddProductToWishListTest extends TestBase{
 		homeObj.searchProductUsingAutoSuggestion(productPartialName);
 		Assert.assertEquals(proPageObj.productName.getText(), productName);
 	}
-	@Test(priority=3)
+	//@Test(dependsOnMethods="userSearchForProductsUsingAutoSuggestion")
+	@Test(priority=3, alwaysRun = true)
 	public void userCanAddProductToWishList() throws InterruptedException
 	{
 		proPageObj= new ProductPage(driver);
@@ -51,7 +53,8 @@ public class AddProductToWishListTest extends TestBase{
 		Assert.assertTrue(proPageObj.notificationBar.getText().contains("The product has been added to your"));
 		proPageObj.closeSuccessMsg();	
 	}
-	@Test(dependsOnMethods = "userCanRegisterSuccessfully", priority= 4 )
+	//@Test(dependsOnMethods = "userCanRegisterSuccessfully", priority= 4 )
+	@Test(priority=4, alwaysRun = true)
 	public void Logout() 
 	{
 		registPageObj.Logout();

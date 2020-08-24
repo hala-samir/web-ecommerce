@@ -14,10 +14,10 @@ public class UserRegistrationTest extends TestBase
 	LoginPage loginObj;
 	String fname="Tester";
 	String lname="Test";
-	String email="tester@test21.com";
+	String email="tester@grg80.com";
 	String oldPass="123456789";
 
-	@Test(priority = 1, alwaysRun = true)
+	@Test(priority = 1)
 	public void userCanRegisterSuccessfully() 
 	{	
 		homeObj=new HomePage(driver);
@@ -27,14 +27,14 @@ public class UserRegistrationTest extends TestBase
 		Assert.assertTrue(registPageObj.successMsg.getText().contains("Your registration completed"));
 	}
 	
-	@Test(dependsOnMethods = "userCanRegisterSuccessfully" )
+	@Test(priority=2) 
 	public void Logout() 
 	{
 		registPageObj.Logout();
 		Assert.assertTrue(homeObj.loginLink.isDisplayed());
 	}
 	
-	@Test(dependsOnMethods = "Logout")
+	@Test(priority=3) 
 	public void userCanLogin() 
 	{
 		homeObj.openLoginPage();

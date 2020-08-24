@@ -22,11 +22,12 @@ public class ShoppingCartTest extends TestBase {
 
 	String quantity = "3";
 	String ProductName_1 = "Apple MacBook Pro 13-inch";
-	@Test(priority=1)
+	
+	@Test(priority=1, alwaysRun = true)
 	public void userCanAddtoShoppingCart() throws InterruptedException
 	{
-		prodPageObj = new ProductPage(driver);
 		homeObj= new HomePage(driver);
+		prodPageObj = new ProductPage(driver);
 		shoppingCartPageObj= new ShoppingCartPage(driver);
 		compareProductsPageObj = new CompareProductsPage(driver);
 
@@ -39,17 +40,21 @@ public class ShoppingCartTest extends TestBase {
 		Assert.assertTrue(shoppingCartPageObj.prodname.getText().contains(ProductName_1));
 
 	}
-	@Test(priority = 2, dependsOnMethods = "userCanAddtoShoppingCart")
+	//@Test(dependsOnMethods = "userCanAddtoShoppingCart")
+	@Test(priority=2, alwaysRun = true) 
 	public void userCanChnageQuantityOfShoppingCart() throws InterruptedException
 	{
+		homeObj= new HomePage(driver);
 		shoppingCartPageObj= new ShoppingCartPage(driver);
 		shoppingCartPageObj.updateProductQuantityInCart(quantity);
 		Assert.assertTrue(shoppingCartPageObj.productTotal.getText().contains("5,400.00"));		
 	}
 	
-	@Test(priority = 3, dependsOnMethods = "userCanChnageQuantityOfShoppingCart")
+	//@Test( dependsOnMethods = "userCanChnageQuantityOfShoppingCart")
+	@Test(priority=3, alwaysRun = true) 
 	public void userCanRemoveFromShoppingCart() throws InterruptedException
 	{
+		homeObj= new HomePage(driver);
 		shoppingCartPageObj= new ShoppingCartPage(driver);
 		shoppingCartPageObj.removeProductFromShoppingCart();
 		shoppingCartPageObj.removeFromCartConfirmationMsg.getText().contains("Your Shopping Cart is empty");

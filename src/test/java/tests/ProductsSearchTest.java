@@ -13,8 +13,18 @@ public class ProductsSearchTest extends TestBase {
 	ProductSearchResultPage prodSearchResultPageObj;
 	String productName = "Apple MacBook Pro 13-inch";
 	String productPartialName = "Apple Mac";
-
-	@Test(priority=2)
+	
+	@Test(priority=1, alwaysRun = true) 
+	public void userSearchForProductsUsingAutoSuggestion() 
+	{
+		homeObj = new HomePage(driver);
+		productPageObj = new ProductPage(driver);
+		prodSearchResultPageObj = new ProductSearchResultPage(driver); 
+		homeObj.searchProductUsingAutoSuggestion(productPartialName);
+		Assert.assertEquals(productPageObj.productName.getText(), productName);
+	}
+	@Test(priority=2, alwaysRun = true)
+//	@Test(dependsOnMethods = "userSearchForProductsUsingAutoSuggestion")
 	public void userSearchesForProducts() 
 	{
 		homeObj = new HomePage(driver);
@@ -24,13 +34,5 @@ public class ProductsSearchTest extends TestBase {
 		Assert.assertEquals(prodSearchResultPageObj.productLink.getText(), productName);
 	}
 
-	@Test(priority=1) 
-	public void userSearchForProductsUsingAutoSuggestion() 
-	{
-		homeObj = new HomePage(driver);
-		productPageObj = new ProductPage(driver);
-		prodSearchResultPageObj = new ProductSearchResultPage(driver); 
-		homeObj.searchProductUsingAutoSuggestion(productPartialName);
-		Assert.assertEquals(productPageObj.productName.getText(), productName);
-	}
+
 }

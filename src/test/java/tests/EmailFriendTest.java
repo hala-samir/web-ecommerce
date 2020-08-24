@@ -21,12 +21,12 @@ public class EmailFriendTest extends TestBase{
 	String productPartialName = "Apple Mac";
 	String fname="Tester";
 	String lname="Test";
-	String email="tester@test2212.co0m";
+	String email="tester@ffgt5.co0m";
 	String friend_mail="friend1@gmail.com";
 	String oldPass="123456789";
 	String msg= "check this please!!";
 	
-	@Test(priority=1)
+	@Test(priority=1, alwaysRun = true)
 	public void userCanRegisterSuccessfully() 
 	{	homeObj=new HomePage(driver);
 		registPageObj=new UserRegistration(driver);
@@ -36,7 +36,8 @@ public class EmailFriendTest extends TestBase{
 		Assert.assertTrue(registPageObj.successMsg.getText().contains("Your registration completed"));
 	}
 
-	@Test(dependsOnMethods="userCanRegisterSuccessfully",priority=2)
+	//@Test(dependsOnMethods="userCanRegisterSuccessfully")
+	@Test(priority=2, alwaysRun = true)
 	public void userSearchForProductsUsingAutoSuggestion() 
 	{
 		homeObj = new HomePage(driver);
@@ -47,7 +48,8 @@ public class EmailFriendTest extends TestBase{
 		Assert.assertEquals(productPageObj.productName.getText(), productName);
 	}
 
-	@Test(dependsOnMethods = "userSearchForProductsUsingAutoSuggestion",priority=3)
+	//@Test(dependsOnMethods = "userSearchForProductsUsingAutoSuggestion")
+	@Test(priority=3, alwaysRun = true)
 	public void emailFriend()
 	{
 		homeObj = new HomePage(driver);
@@ -59,7 +61,8 @@ public class EmailFriendTest extends TestBase{
 		emailFriendPageObj.emailFriend(friend_mail, msg);
 		Assert.assertTrue(emailFriendPageObj.confirmationMsg.getText().contains("Your message has been sent"));
 	}
-	@Test(dependsOnMethods = "userCanRegisterSuccessfully", priority = 4 )
+	//@Test(dependsOnMethods = "emailFriend")
+	@Test(priority=4, alwaysRun = true)
 	public void Logout() 
 	{
 		registPageObj.Logout();

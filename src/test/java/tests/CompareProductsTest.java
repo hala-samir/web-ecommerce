@@ -22,7 +22,7 @@ public class CompareProductsTest extends TestBase {
 	String ProductName_1 = "Apple MacBook Pro 13-inch";
 	String ProductName_2 = "Asus N551JK-XO076H Laptop";
 
-	@Test(priority=1)
+	@Test(priority=1, alwaysRun = true)
 	public void userCanViewProductsComparison() throws InterruptedException 
 	{
 		homeObj= new HomePage(driver);
@@ -47,9 +47,11 @@ public class CompareProductsTest extends TestBase {
 		Assert.assertTrue(compareProductsPageObj.prodTwo.getText().contains(ProductName_2));
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2, alwaysRun = true)
 	public void userCanClearProductsComparision() 
 	{
+		homeObj= new HomePage(driver);
+		proPageObj = new ProductPage(driver);
 		compareProductsPageObj=new CompareProductsPage(driver);
 		compareProductsPageObj.clearCompareList();
 		Assert.assertTrue(compareProductsPageObj.emptyMsg.getText().contains("You have no items to compare"));
