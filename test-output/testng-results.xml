@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12725" started-at="2020-08-23T09:35:12Z" finished-at="2020-08-23T09:35:25Z">
+  <suite name="Default suite" duration-ms="19123" started-at="2020-08-25T17:21:15Z" finished-at="2020-08-25T17:21:34Z">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.ReviewProductTest@124c278f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="12725" started-at="2020-08-23T09:35:12Z" finished-at="2020-08-23T09:35:25Z">
-      <class name="tests.UserRegistrationUsingFakerLibraryTest">
-        <test-method status="PASS" signature="StartDriver(java.lang.String)[pri:0, instance:tests.UserRegistrationUsingFakerLibraryTest@328902d5]" name="StartDriver" is-config="true" duration-ms="19260" started-at="2020-08-23T09:34:53Z" finished-at="2020-08-23T09:35:12Z">
+    <test name="Default test" duration-ms="19123" started-at="2020-08-25T17:21:15Z" finished-at="2020-08-25T17:21:34Z">
+      <class name="tests.ReviewProductTest">
+        <test-method status="PASS" signature="StartDriver(java.lang.String)[pri:0, instance:tests.ReviewProductTest@124c278f]" name="StartDriver" is-config="true" duration-ms="12835" started-at="2020-08-25T17:21:02Z" finished-at="2020-08-25T17:21:15Z">
           <params>
             <param index="0">
               <value>
@@ -18,56 +21,79 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartDriver -->
-        <test-method status="PASS" signature="userCanRegisterSuccessfully()[pri:1, instance:tests.UserRegistrationUsingFakerLibraryTest@328902d5]" name="userCanRegisterSuccessfully" duration-ms="5259" started-at="2020-08-23T09:35:13Z" finished-at="2020-08-23T09:35:18Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.ReviewProductTest@124c278f]" name="setUpClass" is-config="true" duration-ms="416" started-at="2020-08-25T17:21:15Z" finished-at="2020-08-25T17:21:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="userCanRegisterSuccessfully()[pri:1, instance:tests.ReviewProductTest@124c278f]" name="userCanRegisterSuccessfully" duration-ms="5507" started-at="2020-08-25T17:21:15Z" finished-at="2020-08-25T17:21:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userCanRegisterSuccessfully -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.UserRegistrationUsingFakerLibraryTest@328902d5]" name="screenshotOnFailure" is-config="true" duration-ms="5" started-at="2020-08-23T09:35:18Z" finished-at="2020-08-23T09:35:18Z">
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ReviewProductTest@124c278f]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2020-08-25T17:21:21Z" finished-at="2020-08-25T17:21:21Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=userCanRegisterSuccessfully status=SUCCESS method=UserRegistrationUsingFakerLibraryTest.userCanRegisterSuccessfully()[pri:1, instance:tests.UserRegistrationUsingFakerLibraryTest@328902d5] output={null}]]]>
+                <![CDATA[[TestResult name=userCanRegisterSuccessfully status=SUCCESS method=ReviewProductTest.userCanRegisterSuccessfully()[pri:1, instance:tests.ReviewProductTest@124c278f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method status="PASS" signature="Logout()[pri:2, instance:tests.UserRegistrationUsingFakerLibraryTest@328902d5]" name="Logout" duration-ms="2929" started-at="2020-08-23T09:35:18Z" finished-at="2020-08-23T09:35:21Z">
+        <test-method status="PASS" signature="userSearchForProductsUsingAutoSuggestion()[pri:2, instance:tests.ReviewProductTest@124c278f]" name="userSearchForProductsUsingAutoSuggestion" duration-ms="7115" started-at="2020-08-25T17:21:21Z" finished-at="2020-08-25T17:21:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userSearchForProductsUsingAutoSuggestion -->
+        <test-method status="PASS" signature="userCanSubmitProductReview()[pri:3, instance:tests.ReviewProductTest@124c278f]" name="userCanSubmitProductReview" duration-ms="3348" started-at="2020-08-25T17:21:28Z" finished-at="2020-08-25T17:21:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCanSubmitProductReview -->
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ReviewProductTest@124c278f]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2020-08-25T17:21:28Z" finished-at="2020-08-25T17:21:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userSearchForProductsUsingAutoSuggestion status=SUCCESS method=ReviewProductTest.userSearchForProductsUsingAutoSuggestion()[pri:2, instance:tests.ReviewProductTest@124c278f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ReviewProductTest@124c278f]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2020-08-25T17:21:32Z" finished-at="2020-08-25T17:21:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userCanSubmitProductReview status=SUCCESS method=ReviewProductTest.userCanSubmitProductReview()[pri:3, instance:tests.ReviewProductTest@124c278f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method status="PASS" signature="Logout()[pri:4, instance:tests.ReviewProductTest@124c278f]" name="Logout" duration-ms="2489" started-at="2020-08-25T17:21:32Z" finished-at="2020-08-25T17:21:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method status="PASS" signature="userCanLogin()[pri:3, instance:tests.UserRegistrationUsingFakerLibraryTest@328902d5]" name="userCanLogin" duration-ms="4470" started-at="2020-08-23T09:35:21Z" finished-at="2020-08-23T09:35:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userCanLogin -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.UserRegistrationUsingFakerLibraryTest@328902d5]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2020-08-23T09:35:21Z" finished-at="2020-08-23T09:35:21Z">
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ReviewProductTest@124c278f]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2020-08-25T17:21:34Z" finished-at="2020-08-25T17:21:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Logout status=SUCCESS method=UserRegistrationUsingFakerLibraryTest.Logout()[pri:2, instance:tests.UserRegistrationUsingFakerLibraryTest@328902d5] output={null}]]]>
+                <![CDATA[[TestResult name=Logout status=SUCCESS method=ReviewProductTest.Logout()[pri:4, instance:tests.ReviewProductTest@124c278f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.UserRegistrationUsingFakerLibraryTest@328902d5]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2020-08-23T09:35:25Z" finished-at="2020-08-23T09:35:25Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=userCanLogin status=SUCCESS method=UserRegistrationUsingFakerLibraryTest.userCanLogin()[pri:3, instance:tests.UserRegistrationUsingFakerLibraryTest@328902d5] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.ReviewProductTest@124c278f]" name="tearDownClass" is-config="true" duration-ms="15" started-at="2020-08-25T17:21:34Z" finished-at="2020-08-25T17:21:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- screenshotOnFailure -->
-        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.UserRegistrationUsingFakerLibraryTest@328902d5]" name="stopDriver" is-config="true" duration-ms="1911" started-at="2020-08-23T09:35:25Z" finished-at="2020-08-23T09:35:27Z">
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.ReviewProductTest@124c278f]" name="stopDriver" is-config="true" duration-ms="1235" started-at="2020-08-25T17:21:34Z" finished-at="2020-08-25T17:21:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
-      </class> <!-- tests.UserRegistrationUsingFakerLibraryTest -->
+      </class> <!-- tests.ReviewProductTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
