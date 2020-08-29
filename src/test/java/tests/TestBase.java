@@ -52,7 +52,7 @@ public class TestBase extends AbstractTestNGCucumberTests
 	}
 	@BeforeSuite
 	@Parameters("browser")
-	public void StartDriver(@Optional("Firefox")String browserName)
+	public void StartDriver(@Optional("chrome")String browserName)
 	{
 		if (browserName.equalsIgnoreCase("Firefox")) 
 		{
@@ -76,6 +76,7 @@ public class TestBase extends AbstractTestNGCucumberTests
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.navigate().to("https://demo.nopcommerce.com/");
+	
 	}
 
 	@AfterSuite
