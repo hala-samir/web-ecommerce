@@ -11,4 +11,6 @@ public class ProductSearchResultPage extends PageBase {
 	
 	@FindBy(className = "product-title") 
 	public WebElement productLink;
+	@FindBy(className = "product-name") 
+	public WebElement productName;
 }

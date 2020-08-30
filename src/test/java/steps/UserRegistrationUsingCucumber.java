@@ -25,9 +25,8 @@ public class UserRegistrationUsingCucumber extends TestBase {
 	public void User_enters_correct_data_hard_coded() 
 	{
 		registPageObj=new UserRegistration(driver);
-		registPageObj.userRegisteration("ccc", "ddd", "ttq026@svs.cc", "123456789");	
+		registPageObj.userRegisteration("ccc", "ddd", "tm2@sv2s.cc", "123456789");	
 	}
-
 	
 	@When("User enters correct data using Faker")
 	public void user_enters_correct_faker() 
@@ -42,7 +41,7 @@ public class UserRegistrationUsingCucumber extends TestBase {
 		homePageObj= new HomePage(driver);
 		registPageObj=new UserRegistration(driver);
 
-		registPageObj.userRegisteration(firstname,lastname, email, password);   
+		registPageObj.userRegisteration(firstname,lastname, email, password);  
 	}
 	
 	@Then("^User can registered successfully$")
