@@ -6,7 +6,7 @@
       <class name="runner.StepRunner">
         <methods>
           <include name="stopDriver"/>
-          <include name="runScenario"/>
+          <include name="runScenario" invocation-numbers="0"/>
           <include name="screenshotOnFailure"/>
           <include name="tearDownClass"/>
           <include name="StartDriver"/>

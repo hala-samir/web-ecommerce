@@ -30,7 +30,9 @@ public class UserRegistration extends PageBase {
 	@FindBy(id="register-button")
 	WebElement registerBtn;
 	
-	//@FindBy(css = "div.result")
+	@FindBy(className = "result")
+	public WebElement registrationSuccessMsg;
+	
 	@FindBy(className = "page-body")
 	public WebElement successMsg;
 	
