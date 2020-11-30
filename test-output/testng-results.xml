@@ -2,65 +2,53 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13063" started-at="2020-08-30T13:46:36Z" finished-at="2020-08-30T13:46:49Z">
+  <suite name="Ecommerce Regression Suite" duration-ms="4009" started-at="2020-11-30T09:18:01Z" finished-at="2020-11-30T09:18:05Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.StepRunner@be64738]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.ContactUsTest@6bd61f98]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="13063" started-at="2020-08-30T13:46:36Z" finished-at="2020-08-30T13:46:49Z">
-      <class name="runner.StepRunner">
-        <test-method status="PASS" signature="StartDriver(java.lang.String)[pri:0, instance:runner.StepRunner@be64738]" name="StartDriver" is-config="true" duration-ms="18359" started-at="2020-08-30T13:46:17Z" finished-at="2020-08-30T13:46:36Z">
+    <test name="RegressionTestSuite" duration-ms="4009" started-at="2020-11-30T09:18:01Z" finished-at="2020-11-30T09:18:05Z">
+      <class name="tests.ContactUsTest">
+        <test-method status="PASS" signature="StartDriver(java.lang.String)[pri:0, instance:tests.ContactUsTest@6bd61f98]" name="StartDriver" is-config="true" duration-ms="8604" started-at="2020-11-30T09:17:52Z" finished-at="2020-11-30T09:18:01Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[chromeHeadless]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartDriver -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.StepRunner@be64738]" name="setUpClass" is-config="true" duration-ms="920" started-at="2020-08-30T13:46:36Z" finished-at="2020-08-30T13:46:37Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.ContactUsTest@6bd61f98]" name="setUpClass" is-config="true" duration-ms="238" started-at="2020-11-30T09:18:01Z" finished-at="2020-11-30T09:18:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.StepRunner@be64738]" name="runScenario" duration-ms="11870" started-at="2020-08-30T13:46:37Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-30T13:46:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["user can search for a product successfully"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Search for products]"]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="contactUsTest()[pri:0, instance:tests.ContactUsTest@6bd61f98]" name="contactUsTest" duration-ms="3586" started-at="2020-11-30T09:18:01Z" finished-at="2020-11-30T09:18:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:runner.StepRunner@be64738]" name="screenshotOnFailure" is-config="true" duration-ms="2" started-at="2020-08-30T13:46:49Z" finished-at="2020-08-30T13:46:49Z">
+        </test-method> <!-- contactUsTest -->
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ContactUsTest@6bd61f98]" name="screenshotOnFailure" is-config="true" duration-ms="4" started-at="2020-11-30T09:18:05Z" finished-at="2020-11-30T09:18:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.StepRunner@be64738] output={null}]]]>
+                <![CDATA[[TestResult name=contactUsTest status=SUCCESS method=ContactUsTest.contactUsTest()[pri:0, instance:tests.ContactUsTest@6bd61f98] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.StepRunner@be64738]" name="tearDownClass" is-config="true" duration-ms="94" started-at="2020-08-30T13:46:49Z" finished-at="2020-08-30T13:46:49Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.ContactUsTest@6bd61f98]" name="tearDownClass" is-config="true" duration-ms="15" started-at="2020-11-30T09:18:05Z" finished-at="2020-11-30T09:18:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method status="PASS" signature="stopDriver()[pri:0, instance:runner.StepRunner@be64738]" name="stopDriver" is-config="true" duration-ms="813" started-at="2020-08-30T13:46:49Z" finished-at="2020-08-30T13:46:50Z">
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.ContactUsTest@6bd61f98]" name="stopDriver" is-config="true" duration-ms="607" started-at="2020-11-30T09:18:05Z" finished-at="2020-11-30T09:18:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
-      </class> <!-- runner.StepRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- tests.ContactUsTest -->
+    </test> <!-- RegressionTestSuite -->
+  </suite> <!-- Ecommerce Regression Suite -->
 </testng-results>
