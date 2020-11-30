@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Ecommerce Regression Suite]">
-  <parameter name="browser" value="Chrome"/>
+  <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="RegressionTestSuite(failed)">
     <classes>
-      <class name="tests.ContactUsTest">
+      <class name="tests.UserRegistrationTest">
         <methods>
-          <include name="contactUsTest"/>
+          <include name="Logout"/>
           <include name="stopDriver"/>
           <include name="screenshotOnFailure"/>
           <include name="tearDownClass"/>
+          <include name="userCanLogin"/>
+          <include name="userCanRegisterSuccessfully"/>
           <include name="StartDriver"/>
           <include name="setUpClass"/>
         </methods>
-      </class> <!-- tests.ContactUsTest -->
+      </class> <!-- tests.UserRegistrationTest -->
     </classes>
   </test> <!-- RegressionTestSuite(failed) -->
 </suite> <!-- Failed suite [Ecommerce Regression Suite] -->
