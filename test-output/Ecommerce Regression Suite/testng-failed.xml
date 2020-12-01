@@ -4,18 +4,16 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="RegressionTestSuite(failed)">
     <classes>
-      <class name="tests.UserRegistrationTest">
+      <class name="tests.ContactUsTest">
         <methods>
-          <include name="Logout"/>
+          <include name="contactUsTest"/>
           <include name="stopDriver"/>
           <include name="screenshotOnFailure"/>
           <include name="tearDownClass"/>
-          <include name="userCanLogin"/>
-          <include name="userCanRegisterSuccessfully"/>
           <include name="StartDriver"/>
           <include name="setUpClass"/>
         </methods>
-      </class> <!-- tests.UserRegistrationTest -->
+      </class> <!-- tests.ContactUsTest -->
     </classes>
   </test> <!-- RegressionTestSuite(failed) -->
 </suite> <!-- Failed suite [Ecommerce Regression Suite] -->
