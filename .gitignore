@@ -1,1 +1,19 @@
+# Eclipse
+.classpath
+.project
+.settings/
+ 
+# Intellij
+*.iws
+*.ipr
+*.iml
+.idea/
+.settings
+.project
+.classpath
 
+# Maven
+log/
+target/
+#allure
+allure-results
