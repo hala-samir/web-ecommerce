@@ -2,12 +2,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Ecommerce Regression Suite">
 	<parameter name="browser" value="chrome"></parameter>
-	<test name="RegressionTestSuite" preserve-order="true">
+	<test name="RegressionTestSuite">
 		<classes>
-			
-			
-			<class name="tests.ContactUsTest" />
-
+			<class name="tests.UserRegistrationTest" />
 		</classes>
 	</test>
 </suite> 

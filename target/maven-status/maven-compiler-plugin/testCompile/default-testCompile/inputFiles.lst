@@ -1,24 +1,25 @@
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\test\java\tests\UserRegistrationDDTusingJSONFileTest.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\test\java\tests\ShoppingCartTest.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\test\java\data\LoadProperties.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\test\java\tests\ProductsSearchTest.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\test\java\tests\CompareProductsTest.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\test\java\tests\AddProductToWishListTest.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\test\java\tests\UserRegistrationDDTusingCSVFileTest.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\test\java\steps\UserRegistrationUsingCucumber.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\test\java\data\ExcelReader.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\test\java\tests\ReviewProductTest.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\test\java\tests\ChangeCurrencyTest.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\test\java\tests\ProductHoverMenuTest.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\test\java\tests\UserRegistrationDDTest.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\test\java\tests\RegisteredUserCanCheckoutProduct.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\test\java\tests\TestBase.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\test\java\tests\ChangePasswordTest.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\test\java\tests\ContactUsTest.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\test\java\tests\UserRegistrationUsingFakerLibraryTest.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\test\java\runner\StepRunner.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\test\java\data\JSONDataReader.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\test\java\tests\EmailFriendTest.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\test\java\tests\RegistrationTTDusingPropertiesTest.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\test\java\tests\UserRegistrationTest.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\test\java\tests\UserRegistrationUsingTDDExcelFileTest.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/test/java/tests/UserRegistrationUsingFakerLibraryTest.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/test/java/tests/TestBase.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/test/java/tests/ProductHoverMenuTest.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/test/java/tests/UserRegistrationUsingTDDExcelFileTest.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/test/java/tests/ChangeCurrencyTest.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/test/java/tests/ReviewProductTest.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/test/java/tests/UserRegistrationDDTest.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/test/java/tests/RegistrationTTDusingPropertiesTest.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/test/java/tests/ShoppingCartTest.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/test/java/data/LoadProperties.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/test/java/tests/CompareProductsTest.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/test/java/tests/RegisteredUserCanCheckoutProduct.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/test/java/steps/UserRegistrationUsingCucumber.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/test/java/tests/EmailFriendTest.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/test/java/tests/AddProductToWishListTest.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/test/java/data/JSONDataReader.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/test/java/tests/UserRegistrationDDTusingJSONFileTest.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/test/java/tests/UserRegistrationDDTusingCSVFileTest.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/test/java/tests/ContactUsTest.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/test/java/steps/ProductSearchUsingCucumber.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/test/java/tests/ProductsSearchTest.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/test/java/tests/ChangePasswordTest.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/test/java/data/ExcelReader.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/test/java/runner/StepRunner.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/test/java/tests/UserRegistrationTest.java
