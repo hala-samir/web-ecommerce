@@ -1,8 +1,6 @@
 package tests;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import pages.HomePage;
 import pages.LoginPage;
 import pages.UserRegistration;
@@ -42,5 +40,4 @@ public class UserRegistrationTest extends TestBase
 		loginObj.userLogin(email,oldPass);
 		Assert.assertTrue(registPageObj.logout.isDisplayed());
 	}
-	
 }

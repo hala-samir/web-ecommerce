@@ -1,0 +1,15 @@
+pages/ProductReviewPage.class
+pages/MyAccount.class
+helpers/Helper.class
+pages/HomePage.class
+pages/ShoppingCartPage.class
+pages/EmailFriendPage.class
+pages/CheckoutPage.class
+pages/ProductPage.class
+pages/ContactUsPage.class
+pages/UserRegistration.class
+pages/OrderDetailsPage.class
+pages/LoginPage.class
+pages/PageBase.class
+pages/ProductSearchResultPage.class
+pages/CompareProductsPage.class

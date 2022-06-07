@@ -1,15 +1,15 @@
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\main\java\pages\CompareProductsPage.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\main\java\pages\LoginPage.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\main\java\pages\ContactUsPage.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\main\java\pages\OrderDetailsPage.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\main\java\pages\UserRegistration.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\main\java\pages\MyAccount.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\main\java\pages\ProductSearchResultPage.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\main\java\pages\HomePage.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\main\java\pages\PageBase.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\main\java\pages\ProductPage.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\main\java\pages\CheckoutPage.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\main\java\pages\EmailFriendPage.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\main\java\pages\ShoppingCartPage.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\main\java\helpers\Helper.java
-C:\Users\Hala Samir\eclipse-workspace\E-commerce\src\main\java\pages\ProductReviewPage.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/main/java/pages/PageBase.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/main/java/pages/HomePage.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/main/java/pages/LoginPage.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/main/java/pages/ProductSearchResultPage.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/main/java/pages/ProductReviewPage.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/main/java/helpers/Helper.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/main/java/pages/ShoppingCartPage.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/main/java/pages/UserRegistration.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/main/java/pages/MyAccount.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/main/java/pages/CheckoutPage.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/main/java/pages/EmailFriendPage.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/main/java/pages/ProductPage.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/main/java/pages/ContactUsPage.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/main/java/pages/OrderDetailsPage.java
+/home/halasamir/IdeaProjects/web-ecommerce/src/main/java/pages/CompareProductsPage.java

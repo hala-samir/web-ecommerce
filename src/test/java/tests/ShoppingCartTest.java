@@ -2,14 +2,7 @@ package tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import pages.CompareProductsPage;
-import pages.HomePage;
-import pages.LoginPage;
-import pages.ProductPage;
-import pages.ProductSearchResultPage;
-import pages.ShoppingCartPage;
-import pages.UserRegistration;
+import pages.*;
 
 public class ShoppingCartTest extends TestBase {
 	ProductPage prodPageObj;
